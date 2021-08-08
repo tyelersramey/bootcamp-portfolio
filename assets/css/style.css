@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #62B16E;
+  --secondary-color: #273225;
+  --tertiary-color: #A79360;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  color: var(--secondary-color);
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+ }
+
+ section {
+  padding: 60px;
+}
+
+h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 38px;  
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Header Styles */
+header {
+  padding: 20px 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+  border-radius: 5px;
+  text-shadow: none;
+}
+
+/* Hero Styles */
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hero h1 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 38px;
+}
+
+span {
+  font-style: italic;
+}
+
+.hero a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+/* Work Section Styles */
+.work {
+  background-color: rgba(167, 147, 96, 0.35);
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-project {
+  background-image: url(../images/mockup-new2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 70%;
+  margin: 1vw;
+  text-decoration: none;
+}
+
+.small-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.small-project1 {
+  background-image: url(../images/seo3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 25vw;
+  width: 60%;
+  margin: 1vw;
+  text-decoration: none;
+}
+
+.small-project2 {
+  background-image: url(../images/personal-port3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 25vw;
+  width: 60%;
+  margin: 1vw;
+  text-decoration: none;
+}
+
+/* Contact Styles */
+.contact-info a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.make-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer Styles */
+footer {  
+  color: white;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 25px 35px 0px 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  font-size: medium;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .section {
+      width: 80%;
+    }
+
+    
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav {
+    padding-bottom: 20px;
+  }
+
+  .icons {
+    display: none;
+  }
+}
