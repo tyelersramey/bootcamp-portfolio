@@ -129,7 +129,7 @@ span {
 }
 
 .main-project {
-  background-image: url(../images/mockup-new.png);
+  background-image: url(../images/mockup-new2.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 40vw;
@@ -138,36 +138,14 @@ span {
   text-decoration: none;
 }
 
-.project-title {
-  width: 100%;
-  height: 100%;
-  color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-title span {
-  color: white;
-  display: none;
-}
-
-.main-project:hover {
-  background-image: url(../images/mockup-new.png) rgba(39, 50, 37, 0.4);
-  border-radius: 5px;
-}
-
-.project-title span:hover {
-  display: inline;
-}
-
 .small-projects {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .small-project1 {
-  background-image: url(../images/seo.png);
+  background-image: url(../images/seo3.png);
   background-size: contain;
   background-repeat: no-repeat;
   border-top-left-radius: 5px;
@@ -175,13 +153,11 @@ span {
   height: 25vw;
   width: 60%;
   margin: 1vw;
-  align-items: center;
   text-decoration: none;
-  text-align: center;
 }
 
 .small-project2 {
-  background-image: url(../images/personal-port.png);
+  background-image: url(../images/personal-port3.png);
   background-size: contain;
   background-repeat: no-repeat;
   border-top-left-radius: 5px;
@@ -189,7 +165,6 @@ span {
   height: 25vw;
   width: 60%;
   margin: 1vw;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -210,13 +185,6 @@ span {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.make-column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /* Footer Styles */
 footer {  
