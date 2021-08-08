@@ -12,3 +12,5 @@ _There is no additional license other than what the company already has in place
 
 #### **Installation**
 The site can be viewed live on [Github pages](https://tyelersramey.github.io/bootcamp-portfolio/) or below:
+
+![Screen Shot 2021-08-08 at 4 09 52 PM](https://user-images.githubusercontent.com/87218265/128647169-e92e9d02-b94b-4da4-9514-bd6fd3206fd3.png)
