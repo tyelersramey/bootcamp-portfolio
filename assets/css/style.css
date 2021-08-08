@@ -43,8 +43,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
 }
 
@@ -115,6 +113,7 @@ span {
 /* Work Section Styles */
 .work {
   background-color: rgba(167, 147, 96, 0.35);
+  align-items: center;
 }
 
 .projects {
@@ -164,8 +163,7 @@ span {
 
 .small-projects {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
 }
 
 .small-project1 {
@@ -177,7 +175,9 @@ span {
   height: 25vw;
   width: 60%;
   margin: 1vw;
+  align-items: center;
   text-decoration: none;
+  text-align: center;
 }
 
 .small-project2 {
@@ -189,10 +189,33 @@ span {
   height: 25vw;
   width: 60%;
   margin: 1vw;
+  align-items: center;
   text-decoration: none;
 }
 
 /* Contact Styles */
+.contact-info a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.make-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.make-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* Footer Styles */
@@ -200,7 +223,7 @@ footer {
   color: white;
   background-color: var(--primary-color);
   width: 100%;
-  padding: 40px 35px;
+  padding: 25px 35px 0px 35px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -208,4 +231,59 @@ footer {
 
 footer h2 {
   font-size: medium;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .section {
+      width: 80%;
+    }
+
+    
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav {
+    padding-bottom: 20px;
+  }
+
+  .icons {
+    display: none;
+  }
 }
