@@ -20,6 +20,21 @@ body {
   text-transform: uppercase;
  }
 
+ section {
+  padding: 60px;
+}
+
+h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 38px;  
+}
+
+p {
+  font-size: 18px;
+}
+
 /* Header Styles */
 header {
   padding: 20px 50px;
@@ -54,18 +69,17 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  font-size: 1.25vw;
+  font-size: 1.55vw;
 }
 
 header nav ul li a:hover {
-  color: var(--tertiary-color);
-  border-radius: 15px;
+  color: var(--secondary-color);
+  border-radius: 5px;
   text-shadow: none;
 }
 
 /* Hero Styles */
 .hero {
-  padding: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -73,10 +87,14 @@ header nav ul li a:hover {
 }
 
 .hero h1 {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   text-align: center;
   padding-bottom: 25px;
-  font-size: 1.75vw;
+  font-size: 38px;
+}
+
+span {
+  font-style: italic;
 }
 
 .hero a {
@@ -93,6 +111,34 @@ header nav ul li a:hover {
   flex: 25%;
   padding: 5px;
 }
+
+/* Work Section Styles */
+.work {
+  background-color: rgba(167, 147, 96, 0.55);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-project {
+  background-image: url(../images/mockup-new.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 70%;
+  margin: 1vw;
+  text-decoration: none;
+}
+
 
 /* Footer Styles */
 footer {  
